@@ -14,7 +14,7 @@ const DATA = {
         {
           id: 1,
           title: "functions and closures",
-          videoLink: "https://www.youtube.com/embed/PkZNo7MFN",
+          videoLink: "https://www.youtube.com/embed/3qnrouysbG8",
           completed: false,
         },
         {
