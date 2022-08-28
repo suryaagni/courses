@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Seed project for  Courses UI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+### NodeJS
 
-### `npm start`
+The seed project requires NodeJS LTS or greater to be installed. It is recommended that you install NodeJS with a version manager, for instance [n](https://github.com/tj/n).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+curl -L https://git.io/n-install | bash
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### YarnPKG
 
-### `npm test`
+[Yarn](https://yarnpkg.com/) is a package manager that is more predictable than NPM.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+brew update
+brew install yarn
+```
 
-### `npm run build`
+### Project Dependencies
 
+Install all the dependencies for your project.
+
+```
+npm install
+```
+
+## Running the service in development
+
+This project uses [Webpack](https://webpack.js.org/) for development and packaging.
+
+### Run App
+
+```
+npm start
+```
+
+The "start" script will start the Webpack Dashboard which manages compiling the files, and serves the main application at [https://localhost:3000]
+
+While running webpack in "dev mode" watchers will re-compile the source code and "hot-reload" the browsers files so you do not have the reload your browser when you make changes to the client side code (src).
+## Testing
+
+Test are written using [Jest](http://facebook.github.io/jest/) and [ReactTestingLibrary] Tests can be run manually from the terminal with `yarn test`.
+Jest runs in NodeJS so you can utilise the NodeJs debugger and set break points in the code.
+
+In intellij or Webstorm:
+
+- Create a new NodeJS run/debug configuration and give it a name something like "Unit Testing" or "Jest"
+- Change the field "Javascript file" to "node_modules/.bin/jest"
+- Set the field "Application parameters" to "--runInBand"
+- Set breakpoints and enjoy debugging
+
+### Build App
+
+ `npm build`
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Code 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The "src" folder consists of directory called Containers which makes the api calls and renders the component once get the response.
 
-### `npm run eject`
+### Redux tool kit
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app uses redux tool kit for efficient state managment.

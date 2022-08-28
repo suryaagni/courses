@@ -1,0 +1,9 @@
+.footerContainer {
+    position: fixed;
+    bottom: 10px;
+    background: rgb(68,114,196);    
+    width: 100%;
+    padding: 16px 0;
+    left: 0;
+    /* right: 0; */
+}

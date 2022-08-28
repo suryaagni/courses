@@ -1,0 +1,156 @@
+const DATA = {
+  courses: [
+    {
+      id: 551,
+      name: "Javascript Beginners",
+      startDate: 1661601679,
+      endDate: 1661774479,
+      rating: 0,
+      courseCompleted: 30,
+      author: "Douglas Crockford",
+      description:
+        "Learn javascript online and supercharge your javascript",
+      activities: [
+        {
+          id: 1,
+          title: "functions and closures",
+          videoLink: "https://www.youtube.com/embed/PkZNo7MFN",
+          completed: false,
+        },
+        {
+          id: 2,
+          title: "getters and setters",
+          videoLink: "https://www.youtube.com/embed/bl98dm7vJt0",
+          completed: false,
+        },
+        {
+          id: 3,
+          title: "closures",
+          videoLink: "https://www.youtube.com/embed/3a0I8ICR1Vg",
+          completed: false,
+        },
+      ],
+    },
+    {
+      id: 552,
+      name: "Python Beginners",
+      startDate: 1660996879,
+      endDate: 1661169679,
+      courseCompleted: 0,
+      rating: 0,
+      author: "Oreilly",
+      description: "Learn python online and supercharge your web design.",
+      activities: [
+        {
+          id: 1,
+          title: "Introduction to Python Language",
+          videoLink: "https://www.youtube.com/embed/kqtD5dpn9C8",
+          completed: false,
+        },
+        {
+          id: 2,
+          title: "Intro to machine learning",
+          videoLink: "https://www.youtube.com/embed/Y8Tko2YC5hA",
+          completed: false,
+        },
+        {
+          id: 3,
+          title: "conditional statements",
+          videoLink: "https://www.youtube.com/embed/Z1Yd7upQsXY",
+          completed: false,
+        },
+      ],
+    },
+    {
+      id: 553,
+      name: "Golang Beginners",
+      courseCompleted: 0,
+      startDate: 1661342479,
+      endDate: 1661428879,
+      rating: 0,
+      author: "Oreilly",
+      description: "Learn golang online and supercharge your app development.",
+      activities: [
+        {
+          id: 1,
+          title: "Introduction to Golang",
+          videoLink: "https://www.youtube.com/embed/YS4e4q9oBaU",
+          completed: false,
+        },
+        {
+          id: 2,
+          title: "Types and Costants",
+          videoLink: "https://www.youtube.com/embed/yyUHQIec83I",
+          completed: false,
+        },
+        {
+          id: 3,
+          title: "Structures and fuunctions ",
+          videoLink: "https://www.youtube.com/embed/0yWAtQ6wYNM",
+          completed: false,
+        },
+      ],
+    },
+    {
+      id: 554,
+      name: "C++ Beginners",
+      courseCompleted: 0,
+      startDate: 1660996879,
+      endDate: 1661169679,
+      rating: 0,
+      author: "Oreilly",
+      description: "Learn C++ online and improve your coding skills.",
+      activities: [
+        {
+          id: 1,
+          title: "Introduction to Objectivec",
+          videoLink: "https://www.youtube.com/embed/vLnPwxZdW4Y",
+          completed: false,
+        },
+        {
+          id: 2,
+          title: "variable types",
+          videoLink: "https://www.youtube.com/embed/iEn0ozP-jxc",
+          completed: false,
+        },
+        {
+          id: 3,
+          title: "conditional statements",
+          videoLink: "https://www.youtube.com/embed/tKcKL1QJMuo",
+          completed: false,
+        },
+      ],
+    },
+    {
+      id: 555,
+      name: "PHP Beginners",
+      startDate: 1660996879,
+      endDate: 1661169679,
+      courseCompleted: 0,
+      rating: 0,
+      author: "Oreilly",
+      description: "Learn php online and develop websites o the go",
+      activities: [
+        {
+          id: 1,
+          title: "Introduction to Php Language",
+          videoLink: "https://www.youtube.com/embed/BUCiSSyIGGU",
+          completed: false,
+        },
+        {
+          id: 2,
+          title: "Intro to Curl",
+          videoLink: "https://www.youtube.com/embed/EqzUcMzfV1w",
+          completed: false,
+        },
+        {
+          id: 3,
+          title: "Introduction to htaccess",
+          videoLink: "https://www.youtube.com/embed/MkcfB7S4fq0",
+          completed: false,
+        },
+      ],
+    },
+  ],
+};
+export default DATA;

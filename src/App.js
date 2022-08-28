@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AuthContainer from "./container/AuthContainer/AuthContainer";
+import Dashboard from "./container/DashboardContainer/Dashboard";
+import DetailPageContainer from "./container/DetailPageContainer/DetaiiPageContainer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  if (
+    !loggedIn &&
+    !localStorage.getItem("email") &&
+    !localStorage.getItem("password")
+  ) {
+    return (
+      <>
+        <AuthContainer setLoggedIn={setLoggedIn} />
+      </>
+    );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>  
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Dashboard  />
+          </Route>
+          <Route path="/:id/details">
+            <DetailPageContainer/>
+          </Route>
+        </Switch>
+      </Router>
+      <Footer/>
+    </>
   );
 }
 
