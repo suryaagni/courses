@@ -67,3 +67,5 @@ The "src" folder consists of directory called Containers which makes the api cal
 ### Redux tool kit
 
 The app uses redux tool kit for efficient state managment.
+
+
